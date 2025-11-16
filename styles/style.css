@@ -2,11 +2,63 @@
 
 .header{
     border: 1px solid red;
-    min-height: 293px;
+    padding: 91px 50px 95px;
+    display: grid;
+    grid-template-columns: 426px 148px 426px;
+    justify-content: space-between;
 }
 
-.hesder__menu{
-    font-size: 21px;
+.header__memu{
+    font-size: 18px;
+    align-content: center;
+}
+
+.header__memu_list{
+    display: flex;
+    gap: 30px;
+    list-style-type:circle;
+}
+
+.header__memu_item{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.header__memu_item_active header__memu_list_link{
+    text-decoration: none;
+}
+
+.header__memu_list_link{
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+
+.header__logo{
+    height: 105px;  
+}
+
+.header__logo_image{
+    height: 100%;
+}
+
+.address{
+    padding-top: 4px;
+    font-size: 18px;
+    line-height: 136%;
+    color: #000;
+    font-style: normal;
+    padding-left: 186px;
+    width: 100%;
+}
+
+.address__number_link{
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+
+.address__email_link{
+    text-decoration: none;
+    border-bottom: 1px solid #000;
 }
 
 /* Начало контента страницы*/

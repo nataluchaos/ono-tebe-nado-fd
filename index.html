@@ -12,17 +12,29 @@
   <body>
     <header class="header">
         <nav class="header__memu">
-            <ul>
-                <li>главная</li>
-                <li>посмотреть лоты</li>
-                <li>об аукционе</li>
+            <ul class="header__memu_list">
+                <li class="header__memu_item_active">
+                    <a class="header__memu_list_link">главная</a>
+                </li>
+                <li class="header__memu_item">
+                    <a class="header__memu_list_link" href="#0">посмотреть лоты</a>
+                </li>
+                <li class="header__memu_item">
+                    <a class="header__memu_list_link" href="#0">об аукционе</a>
+                </li>
             </ul>
         </nav>
-        <a href="#" ><img src="./images/logo-black.svg"/></a>
+        <a class="header__logo">
+            <img 
+                src="./images/logo-black.svg" 
+                alt="Логотип"
+                class="header__logo_image"
+            />
+        </a>
         <address class="address">
-            <span>+9 999 555 5555</span>
-            <span>info@sobaka.ge</span>
-            <span>наб. Принсенграхт 263- 265, Амстердам</span>
+            <p class="address__number"><a class="address__number_link" href="#0">+9 999 555 5555</a></p>
+            <p class="address__email"><a class="address__email_link" href="#0">info@sobaka.ge</a></p>
+            <p>наб. Принсенграхт 263- 265, Амстердам</p>
         </address>
     </header>
     <main class="content">
@@ -32,29 +44,43 @@
                 <span>тебе</span>
                 <span>надо</span>
             </h1>
-            <div>
-                <p></p>
+            <div class="description">
+                <p>fbfgbfgbfgb</p>
                 <button></button>
             </div>
         </section>
         <section class="lots">
             <h2></h2>
-            <article>
-                <h3></h3>
-                <p></p>
-            </article>
-            <article>
-                <h3></h3>
-                <p></p>
-            </article>
-            <article>
-                <h3></h3>
-                <p></p>
-            </article>
+            <ul>
+                <li>
+                    <a>
+                        <article>
+                            <h3></h3>
+                            <p></p>
+                        </article> 
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <article>
+                            <h3></h3>
+                            <p></p>
+                        </article> 
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <article>
+                            <h3></h3>
+                            <p></p>
+                        </article> 
+                    </a>
+                </li>
+            </ul>
             <a></a>
         </section>
         <section class="about">
-            <img />
+            <div><img /></div>
             <div>
                 <h2></h2>
                 <div>
@@ -72,9 +98,11 @@
         </address>
         <nav></nav>
         <div class="socials">
-            <img />
-            <img />
-            <img />
+            <ul>
+                <li><img /></li>
+                <li><img /></li>
+                <li><img /></li>
+            </ul>
         </div>
     </footer>
   </body>
