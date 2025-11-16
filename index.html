@@ -12,15 +12,15 @@
   <body>
     <header class="header">
         <nav class="header__memu">
-            <ul class="header__memu_list">
-                <li class="header__memu_item_active">
+            <ul class="header__links-list">
+                <li class="header__link_active">
                     <a>главная</a>
                 </li>
                 <li>
-                    <a class="header__memu_list_link" href="#0">посмотреть лоты</a>
+                    <a class="header__link" href="#0">посмотреть лоты</a>
                 </li>
                 <li>
-                    <a class="header__memu_list_link" href="#0">об аукционе</a>
+                    <a class="header__link" href="#0">об аукционе</a>
                 </li>
             </ul>
         </nav>
@@ -28,7 +28,7 @@
             <img 
                 src="./images/logo-black.svg" 
                 alt="Логотип"
-                class="header__logo_image"
+                class="header__logo-image"
             />
         </a>
         <address class="address">
@@ -38,15 +38,20 @@
         </address>
     </header>
     <main class="content">
+        <div class="overlay"></div> <!--Пустой блок: темный фон на картинке-->
         <section class="cover">
-            <h1>
-                <span>оно</span>
-                <span>тебе</span>
-                <span>надо</span>
+            <h1 class="cover__title aligned-text">
+                <span class="aligned-text_left">оно</span>
+                <span class="aligned-text_center">
+                    теб<span class="no-letter-spacing">е</span>
+                </span>
+                <span class="aligned-text_right">
+                    над<span class="no-letter-spacing">о</span>
+                </span>
             </h1>
-            <div class="description">
-                <p>Аукцион вещей, вкоторые никто не верил</p>
-                <button>Сделать ставку</button>
+            <div class="cover__description">
+                <p class="letter-spacing-extended">Аукцион вещей, в которые никто не верил</p>
+                <button class="bet-button">Сделать ставку</button>
             </div>
         </section>
         <section class="lots">
