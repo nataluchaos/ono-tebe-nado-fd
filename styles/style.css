@@ -15,22 +15,25 @@
 
 .header__memu_list{
     display: flex;
-    gap: 30px;
-    list-style-type:circle;
+    gap: 13px;
+    list-style-type: circle;
+    list-style-position: inside;
 }
 
 .header__memu_item{
-    padding-left: 2px;
-    padding-right: 2px;
+
 }
 
-.header__memu_item_active header__memu_list_link{
+.header__memu_item_active{
     text-decoration: none;
+    list-style-type: none;
 }
 
 .header__memu_list_link{
     text-decoration: none;
     border-bottom: 1px solid #000;
+    margin-left: -5px;
+    padding-right: 1px;
 }
 
 .header__logo{
