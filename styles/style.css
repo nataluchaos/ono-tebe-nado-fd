@@ -65,7 +65,7 @@
 
 /* Конец шапки страницы */
 
-/* Начало контента страницы*/
+/* Начало обложки */
 
 .overlay {
     position: absolute;
@@ -148,6 +148,10 @@
     color: #FFF;
 }
 
+/* Конец обложки */
+
+/* Начало блока с лотами */
+
 .lots {
     min-height: 1023px;
     padding: 179px 24px 120px;
@@ -167,7 +171,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;      /* Смещение карточек на другую строку */
+    flex-wrap: wrap;                  /* Смещение карточек на другую строку */
     gap: 25px;
     padding-bottom: 30px;
 }
@@ -233,12 +237,16 @@
     border-bottom: 1px solid #000;  /* добавить подчеркивание для ссылки */
 }
 
+/* Конец блока с лотами */
+
+/* Начало блока об аукционе */
+
 .about {
     display: grid;
     grid-template-columns: 334px auto;
     gap: 24px;
     min-height: 775px;
-    padding: 0px 26px 180px;    
+    padding: 0 26px 180px;    
 }
 
 .about__column {
@@ -250,7 +258,7 @@
     background-color: #000;
     width: 240px;
     height: 240px;
-    border-radius: 120px;  /* Круглый блок */
+    border-radius: 120px;            /* Круглый блок */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +288,7 @@
     color: #000;
 }
 
-/* Конец контента страницы*/
+/* Конец блока об аукционе */
 
 /* Начало подвала страницы */
 .footer {

@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+
+    <!--Начало шапки страницы-->
+
     <header class="header">
         <nav class="header__memu">
             <ul class="header__links-list">
@@ -37,7 +40,13 @@
             <span>наб. Принсенграхт 263- 265, Амстердам</span>
         </address>
     </header>
-    <main class="content">        
+
+    <!--Конец шапки страницы-->
+
+    <main class="content"> 
+
+        <!--Начало обложки-->
+
         <section class="cover">
             <div class="overlay"></div> <!--Пустой блок: темный фон на обложке-->
             <h1 class="cover__title aligned-text">
@@ -54,6 +63,11 @@
                 <button class="bet-button">Сделать ставку</button>
             </div>
         </section>
+
+        <!--Конец обложки-->
+
+        <!--Начало блока с лотами-->
+
         <section class="lots">
             <h2 class="lots__heading">лоты</h2>
             <ul class="lots__card-list">
@@ -107,6 +121,11 @@
             </ul>
             <a class="lots__look-more-link" href="#0">посмотреть больше</a>
         </section>
+
+        <!--Конец блока с лотами-->
+
+        <!--Начало блока об аукционе-->
+
         <section class="about">
             <div class="about__column">
                 <div class="about__logo">
@@ -130,7 +149,7 @@
                     <p>
                         Слишком сложные или, наоборот, слишком простые. Опережающие своё время. 
                         В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они 
-                        казались просто неудачными. Но, несмотря на критику, кажущуюся простоту 
+                        казались просто неудачными. Но, несмотря <br/>на критику, кажущуюся простоту 
                         или сложность, сейчас без этих лотов невозможно представить современную 
                         культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. 
                         И сейчас эти лоты стали культовыми. 
@@ -138,21 +157,66 @@
                 </div>  
             </div>
         </section>
+
+        <!--Конец блока об аукционе-->
+
     </main>
+
+    <!--Начало подвала страницы-->
+
     <footer class="footer">
         <address class="address">
             <span>+9 999 555 5555</span>
             <span>info@sobaka.ge</span>
             <span>наб. Принсенграхт 263- 265, Амстердам</span>
         </address>
-        <nav></nav>
+        <nav class="footer__menu">
+            <ul class="footer__menu-list">
+                <li class="footer__menu-list-item">
+                    <a class="footer__menu-link footer__menu-link_active">главная</a>
+                </li>
+                <li class="footer__menu-list-item">
+                    <a class="footer__menu-link">посмотреть лоты</a>
+                </li>
+                <li class="footer__menu-list-item">
+                    <a class="footer__menu-link">об аукционе</a>
+                </li>
+            </ul>
+        </nav>
         <div class="socials">
-            <ul>
-                <li><img /></li>
-                <li><img /></li>
-                <li><img /></li>
+            <ul class="footer__social-list">
+                <li class="footer__social-list-item">
+                    <a class="footer__social-link">
+                        <img
+                            class="footer__social-icon"
+                            src="./images/yt.svg" 
+                            alt="Иконка YouTube"
+                         />
+                    </a>
+                </li>
+                <li class="footer__social-list-item">
+                    <a class="footer__social-link">
+                        <img
+                            class="footer__social-icon"
+                            src="./images/vk.svg" 
+                            alt="Иконка VK"
+                         />
+                    </a>
+                </li>
+                <li class="footer__social-list-item">
+                    <a class="footer__social-link">
+                        <img
+                            class="footer__social-icon"
+                            src="./images/pinterest.svg" 
+                            alt="Иконка Pinterest"
+                         />
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>
+
+    <!--Конец подвала страницы-->
+
   </body>
 </html>
