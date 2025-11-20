@@ -10,12 +10,11 @@
 .header__memu {
     font-size: 18px;
     color: #000;
-    align-content: center;
 }
 
 .header__links-list {
     display: flex;
-    gap: 13px;
+    gap: 9px;
     list-style-position: inside;
 }
 
@@ -27,15 +26,12 @@
     list-style-type: circle;
 }
 
-.header__link_active {
-    text-decoration: none;
+.header__link {
+    text-underline-offset: 4px;
 }
 
-.header__link {
-    text-decoration: none;             /* убрать стандартное подчеркивание */
-    border-bottom: 1px solid #000;   /* добавить подчеркивание для ссылки */
-    margin-left: -5px;
-    padding-right: 1px;
+.header__link_active {
+    text-decoration: none;
 }
 
 .header__logo {
@@ -52,21 +48,15 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 240px;
-    justify-self: end;                 /* Прижать слева */
+    justify-self: end;                 /* Прижать вправо */
     font-size: 18px;
     line-height: 135%;
     color: #000;
     font-style: normal;
 }
 
-.address__number_link {
-    text-decoration: none;
-    border-bottom: 1px solid #000;
-}
-
-.address__email_link {
-    text-decoration: none;            /* убрать стандартное подчеркивание */
-    border-bottom: 1px solid #000;  /* добавить подчеркивание для ссылки */
+.address__link {
+    text-underline-offset: 4px;
 }
 
 /* Конец шапки страницы */
@@ -152,6 +142,7 @@
     border: 1px solid white;
     background-color: transparent;
     color: #FFF;
+    cursor: pointer;
 }
 
 /* Конец обложки */
@@ -159,7 +150,6 @@
 /* Начало блока с лотами */
 
 .lots {
-    min-height: 1023px;
     padding: 180px 24px 120px;
 }
 
@@ -177,7 +167,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;                  /* Смещение карточек на другую строку */
+    flex-wrap: wrap;                 /* Смещение карточек на другую строку */
     gap: 25px;
     padding-bottom: 30px;
 }
@@ -239,8 +229,7 @@
     font-size: 20px;
     color: #000;
     margin-left: 40px;
-    text-decoration: none;            /* убрать стандартное подчеркивание */
-    border-bottom: 1px solid #000;  /* добавить подчеркивание для ссылки */
+    text-underline-offset: 4px;
 }
 
 /* Конец блока с лотами */
@@ -264,7 +253,7 @@
     background-color: #000;
     width: 240px;
     height: 240px;
-    border-radius: 120px;            /* Круглый блок */
+    border-radius: 50%;            /* Круглый блок */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,14 +298,7 @@
 }
 
 .footer__address {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 265px;
-    font-size: 18px;
-    line-height: 136%;
-    color: #000;
-    font-style: normal;
+    justify-self: start;        /* Прижать слева */
 }
 
 .footer__menu-list {
@@ -328,8 +310,7 @@
 }
 
 .footer__menu-link {
-    text-decoration: none;            /* убрать стандартное подчеркивание */
-    border-bottom: 1px solid #000;  /* добавить подчеркивание для ссылки */
+    text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
